@@ -1,0 +1,27 @@
+<html>
+   <!-- In this project I faced problem while adding function on button:
+Lesson I learnt:
+Will work fine in both condition using onclick and addEventListener -->
+    <body id="body">
+      <center>
+        <div>
+            background-color: red
+        </div>
+        <button id="btn" onclick="ClickMe()">Click Me</button>
+      </center>
+    </body>
+    <script>
+ let arr=["green","red","yellow","blue","brown","pink","violet"];
+ let len=arr.length-1;
+ 
+ let btn=document.getElementById("btn");
+ let body=document.getElementById("body");
+//  btn.addEventListener("click",ClickMe);
+ function ClickMe(){
+    let num=Math.ceil((Math.random()*10)%len);
+    let color=arr[num];
+    body.style.backgroundColor=color;
+ }
+ 
+    </script>
+</html>
